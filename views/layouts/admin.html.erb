@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin</title>
+  <%= stylesheet_link_tag    "/assets/admin/admin", :media => "all" %>
+  <%= javascript_include_tag "/assets/admin/admin" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <h1>The Admin</h1>
+
+  <%= yield %>
+
+</body>
+</html>

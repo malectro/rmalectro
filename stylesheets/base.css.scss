@@ -1,0 +1,24 @@
+/* Kyle's reset */
+html, body, input {
+  margin: 0;
+  padding: 0;
+}
+html, body, h1, h2, h3, h4, div, p, a, a:visited {
+  margin: 0;
+  padding: 0;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: 150%;
+  text-decoration: inherit;
+  color: inherit;
+}
+
+/* clearfix */
+.clearfix:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}.clearfix{display:inline-block;}html[xmlns] .clearfix{display:block;}* html .clearfix{height:1%;}div.clearfix{display:block;}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+
