@@ -20,7 +20,8 @@
       },
 
       clear: function () {
-      },
+      }
+    });
 
     MyApp.App = new App;
   });
