@@ -22,15 +22,17 @@ end
 @app_name = app_name
 @cwd = File.dirname(__FILE__)
 
-gem "mongoid"
+# uncomment to use mongoid
+# gem "mongoid"
+# generate 'mongoid', 'config'
+
+# comment to not use postgres
+gem "pg"
 gem "ejs", group: :assets
 
 application do
   "config.assets.precompile += ['admin/admin.js', 'admin/admin.css']"
 end
-
-# generate mongoid.yml
-generate 'mongoid', 'config'
 
 # add vendor js
 vendor_js_uri 'backbone.js', 'http://backbonejs.org/backbone.js'
@@ -81,7 +83,9 @@ inside "config" do
     end
     }
   end
-  local_copy "config/mongoid.yml", "mongoid.yml", app_name: true
+
+  # uncomment to use mongoid
+  # local_copy "config/mongoid.yml", "mongoid.yml", app_name: true
 end
 
 remove_file "public/index.html"
